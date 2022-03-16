@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Java Script</title>
+
+    <script>
+        console.log(toCamelCase("The-steTTTalth-warrior"))
+
+        /*function toCamelCase(str) {
+            res = str.split(/_+|-+/g);
+            console.log(res)
+            fruits = ["APPLE", "oranGEEEee", "cherry"];
+
+            for (var i = 0; i < res.length; i++) {
+                res[i] = paraMinusculo(res[i])
+                if (i > 0)
+                    res[i] = firstUpper(res[i])
+            }
+
+            return res.join('')
+        }*/
+
+
+        function paraMinusculo(item) { //coloca toda a palavra em minusculo, exceto a primeira letra
+            return item.charAt(0) + item.substr(1).toLowerCase()
+        }
+
+        function firstUpper(item) { //coloca a primeira letra em maisculo
+            return item.charAt(0).toUpperCase() + item.substr(1)
+        }
+    </script>
+</head>
+
+<body></body>
+
+</html>

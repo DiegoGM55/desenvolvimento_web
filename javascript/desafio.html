@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Java Script</title>
+
+    <script>
+
+
+        function acao(){
+
+            var identificador = document.getElementById("input").value;
+            document.getElementById("input").value = "";
+
+            if(identificador.match(/^[0-9]+$/))
+                document.getElementById("numeros").value += identificador;
+            else
+                document.getElementById("letras").value += identificador;
+        }
+
+        function modificaEstilo(bg){
+
+            document.getElementById("quadrado").style.backgroundColor=bg;
+        }
+
+        function bgChange() {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+       
+
+    </script>
+    
+  </head>
+
+  <body>
+    
+    <input type="text" onkeyup="acao();" id="input"><br/>
+    Letras: <input id="letras" type="text" disabled><br/>
+    Numeros: <input id="numeros" type="text" disabled><br/><br/><br/>
+
+    <hr />
+    <h3>Seta cor de fundo</h3>
+    <input id="vermelho" onclick="modificaEstilo('#FF0000')" type="button" value="Vermelho">
+    <input id="verde" onclick="modificaEstilo('#00FF00')" type="button" value="Verde">
+    <input id="azul" onclick="modificaEstilo('#0000FF')" type="button" value="Azul"><br/><br/><br/>
+
+    <div id="quadrado" style="border: 1px solid black; width: 100px; height: 100px;"></div><br/><br/><br/>
+
+    <hr />
+    <h3>Define cor Aleatória</h3>
+    <input onclick="bgChange()" type="button" value="Vermelho">
+    <div id="aleatorio" style="border: 1px solid black; width: 100px; height: 100px;"></div>
+
+  </body>
+</html>

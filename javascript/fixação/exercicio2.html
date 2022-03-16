@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Java Script</title>
+      
+    <style>
+        .estilo2{
+            background-color: yellow;
+        }
+    </style>
+
+    
+  </head>
+
+  <body>
+    <input id="texto" class="" onfocus="mudaBg();" onfocusout ="recuperaValor();" type="text">
+      
+      
+    <script>
+      function mudaBg(){
+          document.getElementById("texto").className = "estilo2";
+      }
+
+      function recuperaValor(){
+          var string= document.getElementById("texto").value;
+          if(string.length >= 3){
+              document.getElementById("texto").style.backgroundColor = "green";
+          }else{
+              document.getElementById("texto").style.backgroundColor = "red";
+          }
+      }
+    </script>
+    </body>
+</html>

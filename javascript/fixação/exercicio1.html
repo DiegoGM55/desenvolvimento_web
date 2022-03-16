@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Java Script</title>
+
+    <script>
+      var num1 = parseInt(prompt("Digite um numero: "));
+      var operacao = prompt("Digite a operação(por extenso): ");
+      var num2 = parseInt(prompt("Digite um numero: "));
+        
+      calculo(num1,num2,operacao);
+
+      function calculo(num1, num2, operacao) {
+        operacao = operacao.toLowerCase();
+
+        switch (operacao) {
+          case "soma":
+            var total = num1 + num2;
+            break;
+
+          case "subtração":
+            var total = num1 - num2;
+        }
+
+        return document.write("O resultado é: " + total);
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>

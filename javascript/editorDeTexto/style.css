@@ -1,0 +1,54 @@
+body {
+    width: 1024px;
+    height: auto;
+    margin: auto;
+}
+
+textarea {
+    width: 1024px;
+    height: 200px;
+    resize: none;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 0;
+    margin: 0;
+    border-style: solid black 0.5px;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: gray;
+    color: honeydew;
+}
+
+.container {
+    font-size: 0;
+    background-color: #efefef;
+}
+
+.buttons {
+    margin: 0;
+    font-size: 12px;
+}
